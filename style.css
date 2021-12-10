@@ -392,6 +392,10 @@ p.card-text {
   padding-bottom: 15px;
   border-radius: 5px;
 }
+.container00 .box .dream img:hover {
+  transition: all .5s ease;
+  transform: scale(1.1);
+}
 
 .container00 .btn00 {
   margin: 40px 0 70px 0;
