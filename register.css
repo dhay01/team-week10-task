@@ -1,0 +1,208 @@
+
+html, body {
+  width: 100%;
+  height:100%;
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  /* margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center; */
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+    background: linear-gradient(-45deg, #ffce97, #807667, #21575e, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+	background: linear-gradient(to bottom, #f4ceae, #fff4d2, #fff3da);
+} */
+.main{
+	width: 450px;
+	height: 600px;
+	background: rgb(255, 222, 222);
+	overflow: hidden;
+	background:
+
+    linear-gradient(
+        
+    rgba(38, 60, 52, 0.911),
+    rgba(169, 166, 161, 0.95));
+   /* url("https://www.papierspeintsfenducci.com/2455-large_default/papier-peint-casadeco-jules-julie-montgolfiere-bleu-jul18996111.jpg") no-repeat center/ cover; */
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+  margin-left: 7%;
+  margin-top: 3%;
+  display: inline-block;
+ 
+}
+#chk{
+	display: none;
+}
+.signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+label{
+	color: rgb(26, 45, 40);
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 50px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+input{
+	width: 60%;
+	height: 10px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 15px auto;
+	padding: 20px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+button{
+	width: 55%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: rgb(255, 255, 255);
+	background: #2f646d;
+	font-size: 1em;
+	
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+button:hover{
+	background: #358e7d;
+  box-shadow: 5px 5px 5px rgb(0, 255, 179);
+  transition: .8s ease-in-out;
+}
+.terms-and-conditions{
+	height: 460px;
+	background: rgb(208, 197, 177);
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+.terms-and-conditions .trms{
+  font-size:23px;
+  text-align: center;
+	color: #153136;
+	transform: scale(.6);
+}
+
+#chk:checked ~ .terms-and-conditions{
+	transform: translateY(-500px);
+}
+#chk:checked ~ .terms-and-conditions label{
+	transform: scale(1);	
+}
+#chk:checked ~ .signup label{
+	transform: scale(.6);
+}
+
+
+input {
+  background-color: rgb(255, 255, 255);
+  
+}
+
+.terms {
+  color: #153136;
+  font-size: 15px;
+  font-weight: lighter;
+  padding: 15px;
+}
+
+
+
+.showcase {
+height: 70%;
+width: 96%;
+
+margin-top: 1%;
+background-image: url();
+/* display: inline-block; */
+
+}
+
+
+.photos {
+  display: inline-block;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding: 50px 10px 50px 30px; */
+  margin-left: 50%;
+  margin-top: -38%;
+height: 70%;
+width: 40%;
+/* background-image: url(https://pngstick.com/imgs/sparkle-gif-png/animated-gif-shared-by-nana-find-images-and-videos-about-gif-and-png-on-we-heart-it-the-app-to-get-lost-in-what-you%E2%80%A6-sparkle-png-gif-background-aesthetic-gif.gif); */
+background-color: rgb(208, 197, 177, 0.3);
+  /* margin-top: 1%; */
+  border-radius: 30px;
+  padding: 40px;
+
+ 
+}
+
+
+.para {
+  color: white;
+  font-weight: lighter;
+  text-align: left;
+}
+
+.photos:hover {
+  box-shadow: 
+  0 0 40px 20px rgb(255, 236, 236),  /* inner white */
+
+    0 0 70px 5px rgb(0, 255, 170); /* outer cyan */
+  transition: .8s ease-in-out;
+  background-image: url(https://i.pinimg.com/originals/43/7c/b7/437cb739d14912acd84d65ee853b9067.gif);
+background-color: rgb(208, 197, 177, 0.6);
+}
+
+.main:hover {
+  
+    box-shadow: 
+    0 0 40px 20px rgb(255, 236, 236),  /* inner white */
+  
+      0 0 70px 5px rgb(0, 255, 170); /* outer cyan */
+    transition: .8s ease-in-out;
+  }
