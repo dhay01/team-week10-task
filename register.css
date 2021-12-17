@@ -152,7 +152,7 @@ input {
 
 
 .showcase {
-height: 70%;
+height: 85%;
 width: 96%;
 
 margin-top: 1%;
@@ -173,7 +173,7 @@ background-image: url();
 height: 70%;
 width: 40%;
 /* background-image: url(https://pngstick.com/imgs/sparkle-gif-png/animated-gif-shared-by-nana-find-images-and-videos-about-gif-and-png-on-we-heart-it-the-app-to-get-lost-in-what-you%E2%80%A6-sparkle-png-gif-background-aesthetic-gif.gif); */
-background-color: rgb(208, 197, 177, 0.3);
+/* background-color: rgb(208, 197, 177, 0.3); */
   /* margin-top: 1%; */
   border-radius: 30px;
   padding: 40px;
@@ -188,15 +188,14 @@ background-color: rgb(208, 197, 177, 0.3);
   text-align: left;
 }
 
-.photos:hover {
+/* .photos:hover {
   box-shadow: 
-  0 0 40px 20px rgb(255, 236, 236),  /* inner white */
-
-    0 0 70px 5px rgb(0, 255, 170); /* outer cyan */
+  0 0 40px 20px rgb(255, 236, 236), 
+    0 0 70px 5px rgb(0, 255, 170); 
   transition: .8s ease-in-out;
   background-image: url(https://i.pinimg.com/originals/43/7c/b7/437cb739d14912acd84d65ee853b9067.gif);
 background-color: rgb(208, 197, 177, 0.6);
-}
+} */
 
 .main:hover {
   
@@ -206,3 +205,73 @@ background-color: rgb(208, 197, 177, 0.6);
       0 0 70px 5px rgb(0, 255, 170); /* outer cyan */
     transition: .8s ease-in-out;
   }
+
+
+
+
+
+  @keyframes bg {
+    0% {
+        background-size:    0 3px,
+                            3px 0,
+                            0 3px,
+                            3px 0;
+    }
+    25% {
+        background-size:    100% 3px,
+                            3px 0,
+                            0 3px,
+                            3px 0;
+    }
+    50% {
+        background-size:    100% 3px,
+                            3px 100%,
+                            0 3px,
+                            3px 0;
+    }
+    75% {
+        background-size:    100% 3px,
+                            3px 100%,
+                            100% 3px,
+                            3px 0;
+    }
+    100% {
+        background-size:    100% 3px,
+                            3px 100%,
+                            100% 3px,
+                            3px 100%;
+    }
+}
+
+.showcase {
+    width: 96%;
+	height: 85%;
+    margin: 5% auto;
+    /* padding: 2em; */
+    
+    background-repeat: no-repeat;
+    background-image:   linear-gradient(to right, #C9C9C9 100%, #C9C9C9 100%),
+                        linear-gradient(to bottom, #C9C9C9 100%, #C9C9C9 100%),
+                        linear-gradient(to right, #C9C9C9 100%, #C9C9C9 100%),
+                        linear-gradient(to bottom, #C9C9C9 100%, #C9C9C9 100%);
+    background-size:    100% 3px,
+                        3px 100%,
+                        100% 3px,
+                        3px 100%;
+    background-position:    0 0,
+                            100% 0,
+                            100% 100%,
+                            0 100%;
+    animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
+    animation-play-state: paused;
+}
+
+.showcase:hover {
+    animation-play-state: running;
+}
+
+
+
+
+
+
